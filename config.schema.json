@@ -1,0 +1,46 @@
+{
+    "pluginAlias": "FGLairThermostatLocal",
+    "pluginType": "accessory",
+    "singular": false,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "Name",
+                "type": "string",
+                "required": true,
+                "default": "Fujitsu Local",
+                "description": "The name that will appear in the Home App and your homebridge log."
+            },
+            "lanipkey": {
+                "title": "Lan IP Key",
+                "type": "string",
+                "required": true,
+                "default": "",
+                "description": "LAN IP Key from FGLair Server"
+            },
+            "unithostname": {
+                "title": "AC Unit Hostname or IP",
+                "type": "string",
+                "required": true,
+                "default": "",
+                "description": "Hostname or IP of the AC Unit"
+            },
+            "localserverip": {
+                "title": "Server bind IP address",
+                "type": "string",
+                "required": true,
+                "default": "",
+                "description": "Local IP of this homekit instance for AC unit to reach server via http"
+            },
+            "localserverport": {
+                "title": "Local port for AC to reach homekit",
+                "type": "string",
+                "required": true,
+                "default": "9016",
+                "description": "Port for listening for AC unit property update"
+            }
+
+        }
+    }
+}
